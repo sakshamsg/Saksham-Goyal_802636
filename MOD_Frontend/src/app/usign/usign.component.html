@@ -1,0 +1,60 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="bg1">
+    <div class="container st1" style="margin-left: 111px; width: 600px; height: 644px; background-color: rgba(0,0,0,.25);">
+      <h2 style="color: azure; margin-left: 234px;">&nbsp; &nbsp;<br>SignUp</h2><br><br>
+      <!-- <p>In this example, we use <code>.was-validated</code> to indicate what's missing before submitting the form:</p> -->
+      <form class="was-validated">
+        <div class="form-group">
+            <label for="uname" class="hd1" style="color: azure">Full Name:</label>
+            <input type="text" class="form-control fc1" [(ngModel)]="item.student_Name" name="name" placeholder="Enter username" required>
+            <!-- <div class="valid-feedback">Valid.</div> -->
+            <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+          </div>
+          <br>
+        <div class="form-group">
+          <label for="uname" class="hd1" style="color: azure">Email:</label>
+          <input type="text" class="fc1" [(ngModel)]="item.student_EmailId" name="email" placeholder="Enter email id"  required>
+          <!-- <div class="valid-feedback">Valid.</div> -->
+          <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+        </div>
+        <br>        
+        <div class="form-group">
+          <label for="uname" class="hd1" style="color: azure">Phone Number:</label>
+          <input type="number" class="fc1" [(ngModel)]="item.student_PhoneNumber" name="phone" placeholder="Enter contact number"  required>
+          <!-- <div class="valid-feedback">Valid.</div> -->
+          <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="pwd" class="hd1" style="color: azure">Password:</label>
+          <input type="password" class="fc1" [(ngModel)]="item.student_Password" name="password" placeholder="Enter password"  required>
+          <!-- <div class="valid-feedback">Valid.</div> -->
+          <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
+        </div>
+        <br>
+        <br>
+        <button (click)="SRegister()" class="btn btn-primary" style="background-color: #52626f; margin-left: 208px;">Register</button>
+      <!-- {{item|json}} -->
+      </form>
+
+    </div>
+    </div>
+    </body>
+    </html>
+    
+    
+    
+    

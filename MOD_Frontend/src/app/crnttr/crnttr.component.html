@@ -1,0 +1,32 @@
+<p>comptr works!</p>
+<html>
+<body>
+    <div class="bg2">
+            <div class="txt1">
+                    <h2>
+                        Ready to jump back in?<br>
+                    </h2>
+                </div>
+        <div class="container mt-3" style="padding-top: -1%" *ngFor="let item of list">       
+        <br>
+                 <div class="media border p-3" style="border-radius: 1rem; background: rgba(0,0,0,0.7)">
+        
+                    <div class="media-body">
+                        <div class="row align-items-center justify-content-center">
+                            <h6 class="col-md-2 pt-3" style="color: white"> <b>{{item.tech_name}}</b> </h6>
+                            <span class="col-md-2 pt-3">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%; background-color: #a5a099;">{{item.progress}}</div>
+                                </div>
+                            </span>
+                            <span class="col-md-4 pt-3" style="color: white">{{item.timeslot}}</span>
+                            
+                            <button style="background-color: #c4c1b9bf" class="btn  col-md-2">Continue</button>
+                        </div>
+                     </div>
+            </div>
+       
+        </div>
+    </div>  
+</body>
+</html>

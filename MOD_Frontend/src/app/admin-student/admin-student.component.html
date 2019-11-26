@@ -1,0 +1,25 @@
+<div class="container gh">
+    <table class="table table-striped">
+          <thead>
+            <tr style="color: aliceblue;">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody style="color: aliceblue;" *ngFor="let item of list">
+            <tr>
+              <td>{{item.studentId}}</td>
+              <td>{{item.student_Name}}</td>
+              <td>{{item.student_EmailId}}</td>
+              <td>{{item.student_PhoneNumber}}</td>
+              <td>
+                <button (click)="Delete(item.studentId)" class="fa fa-times" style="width: 69px; ">Delete</button>
+            </td>
+            </tr>
+         </tbody>
+        </table>
+      </div>
+<router-outlet></router-outlet>      

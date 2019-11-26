@@ -1,0 +1,36 @@
+
+<!-- <p>comptr works!</p> -->
+<html>
+<body>
+    <div class="bg2">
+            <div class="txt1" style="margin-top: -57px; margin-left: -82px;">
+                    <h2>
+                        Congratulations! <br>
+                        You've moved one step forward.<br>
+                    </h2>
+                </div>
+                <br>
+        <div class="container mt-3" style="padding-top: -1%" *ngFor="let item of list">       
+        <!-- <br> -->
+        <div class="media border p-3" style="border-radius: 1rem; background: rgba(0,0,0,0.7); height: 65px;">
+        
+            <div class="media-body" style="margin-top: -15px;">
+                        <div class="row align-items-center justify-content-center">
+                            <h6 class="col-md-2 pt-3" style="color: white; left: 34px"> <b>{{item.tech_name}}</b> </h6>
+                            <span class="col-md-4 pt-3" style="color: white;left: 49px; top: -3px;"> <b>Start Date: </b> <span>{{item.startDate|date}} </span> </span>
+                            <span class="col-md-4 pt-3" style="color: white; left: 11px; top: -3px;"> <b>End Date: </b><span>{{item.endDate|date}} </span> </span>
+                            <span class="col-md-2 pt-3" style="right: 38px; top: -12px;">
+                                    <span class="col-md-4 pt-3" style="color: white; left: 39px; top: -3px; left: -6px; top: -4px;"> Percentile </span>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:85%; background-color: #a5a099;">85%</div>
+                                    </div>
+                                </span>
+                        </div>
+             </div>
+        </div>
+        
+    </div>
+    </div>  
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+.b2{
+    background-image: url("/assets/images/single-post.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.bx{
+    margin-top: 0px;
+}

@@ -1,0 +1,14 @@
+.bg2{
+    background-image: url("../../assets/images/crrnttrng.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 214px;
+
+}
+.txt1{
+    margin-top: -62px;
+    margin-left: 165px;
+    color: #000000;
+    font-size: 22px;
+    font-family: cursive;
+}

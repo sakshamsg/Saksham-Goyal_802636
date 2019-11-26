@@ -1,0 +1,15 @@
+.bg3{
+    /* background-image: url("../../assets/images/cc.jpg"); */
+    background-color: rgba(118, 110, 110, 0.12);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 350px;
+
+}
+.txt1{
+    margin-top: -62px;
+    margin-left: 165px;
+    color: #665454;
+    font-size: 22px;
+    font-family: cursive;
+}

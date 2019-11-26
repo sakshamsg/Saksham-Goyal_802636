@@ -1,0 +1,14 @@
+.bg1{
+    background-image: url("../../assets/images/lamp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 220px;
+
+}
+
+.st1{
+    width: 75%;
+    padding-left: -31px;
+    margin-left: -49px;
+    margin-top: -30px;
+}

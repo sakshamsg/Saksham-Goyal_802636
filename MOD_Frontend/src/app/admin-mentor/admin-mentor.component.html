@@ -1,0 +1,31 @@
+<div class="container gh">
+    <table class="table table-striped">
+          <thead>
+            <tr style="color: aliceblue;">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Exp</th>
+              <th>Timeslot</th>
+              <th>Skills</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody style="color: aliceblue;" *ngFor="let item of list">
+            <tr>
+              <td>{{item.mentorId}}</td>
+              <td>{{item.mentorName}}</td>
+              <td>{{item.mentor_EmailId}}</td>
+              <td>{{item.mentor_PhoneNumber}}</td>
+              <td>{{item.mentor_YrsOfExp}}</td>
+              <td>{{item.mentor_Timeslot}}</td>
+              <td>{{item.mentor_Skills}}</td>
+              <td>
+                <button (click)="Delete(item.mentorId)" class="fa fa-times" style="width: 69px; ">Delete</button>
+            </td>
+            </tr>
+         </tbody>
+        </table>
+      </div>
+<router-outlet></router-outlet>      

@@ -1,0 +1,80 @@
+<div class="hero-content">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email d-flex align-items-center">
+                            <i class="fa fa-envelope"></i><a href="#">tech.learn@gmail.com</a>
+                        </div>
+
+                        <div class="header-bar-text lg-flex align-items-center" style="margin-top:4px;">
+                            <p><i class="fa fa-phone"></i>011-12345678 </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="header-bar-search">
+                            <form class="flex align-items-stretch">
+                                <input type="search" placeholder="What would you like to learn?">
+                                <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="header-bar-menu" >
+                            <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                <div class="dropdown">
+                                        <button class="dropbtn" *ngIf="settok()==0">
+                                          <a routerLink="ul" style="color: #ffffff;">Login</a>
+                                        </button>
+                                </div> &nbsp;
+                                <div class="dropdown">
+                                    <button (click)="logout()" class="dropbtn" *ngIf="settok()!=0">
+                                      <a routerLink="ul" style="color: #ffffff;">Logout</a>
+                                    </button>
+                            </div> &nbsp;
+                                <div class="dropdown" *ngIf="settok()==0">
+                                        <button class="dropbtn">Register 
+                                          <i class="fa fa-caret-down"></i>
+                                        </button>
+                                        <div class="dropdown-content">
+                                          <a routerLink="us">User</a>
+                                          <a routerLink="ms">Mentor</a>
+                                        </div>
+                                      </div> 
+                            </ul>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div>
+    
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-lg-3">
+                        <div class="site-branding">
+                            <h1 class="site-title"><a href="index.html" rel="home"><font color= "cadetblue">Tech</font><span>Learn</span></a></h1>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                        <nav class="site-navigation flex justify-content-end align-items-center" style="width: 80%;">
+                            <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center" style="left: -56px;">
+                                <li class="current-menu-item"><a routerLink="hm">&nbsp;Home</a></li>
+                                <li><a routerLink="abt"><font color="black">About</font></a></li>
+                                <li><a routerLink="crs"><font color="black">Courses</font></a></li>
+                                <li><a href="#"><font color="black">Blog</font></a></li>
+                                <li><a routerLink="ctus"><font color="black">Contact</font></a></li>
+                            </ul>
+
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header>
+
+</div>
+
+<router-outlet></router-outlet>

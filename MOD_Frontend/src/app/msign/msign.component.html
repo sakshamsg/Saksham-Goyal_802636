@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="bg1">
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+      <div class="wrapper wrapper--w680">
+          <div class="card card-4" style="background-color: rgba(0,0,0,.25);">
+              <div class="card-body">
+                  <h2 class="title" style="color: azure; margin-left: 259px;">&nbsp; &nbsp;Mentor SignUp</h2><br>
+                  <form method="POST" style="margin-left: 61px;">
+                      <div class="row row-space">
+                          <div class="col-2">
+                              <div class="input-group">
+                                  <label for="uname" style="color: azure ">Full Name:</label>
+                              <input type="text" class="form-control" [(ngModel)]="item.mentorName" name="name" placeholder="Enter name" required style="width: 330px;">
+                              <div class="valid-feedback">Valid.</div>
+                              <div class="invalid-feedback">Please fill out this field.</div><br><br><br><br>
+                              <br>
+                              </div>
+                          </div>
+                              
+                          <div class="col-2">
+                              <div class="input-group">
+                                <label for="uname" style="color: azure; margin-left: 346px;">Email:</label>
+                                <input type="text" class="form-control" [(ngModel)]="item.mentor_EmailId" name="email" placeholder="Enter email"
+                                  required style="width: 330px; margin-left: 346px;">
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div><br><br><br><br>
+                                <br>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row row-space" style="margin-top: -82px;">
+                        <div class="col-2">
+                          <div class="input-group">
+                              <label for="uname" style="color: azure ">Phone number:</label>
+                          <input type="number" class="form-control" [(ngModel)]="item.mentor_PhoneNumber" name="phno" placeholder="Enter phone number"
+                            required style="width: 330px;">
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div><br><br><br><br>
+                          <br>
+                          </div>
+                      </div>
+                          <div class="col-2">
+                            <div class="input-group">
+                              <label for="uname" style="color: azure; margin-left: 346px;">Password:</label>
+                              <input type="password" class="form-control" [(ngModel)]="item.mentor_Password" name="pswd" placeholder="Enter password"
+                                required style="width: 330px; margin-left: 346px;">
+                              <div class="valid-feedback">Valid.</div>
+                              <div class="invalid-feedback">Please fill out this field.</div><br><br><br><br>
+                              <br>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="row row-space" style="margin-top: -82px;">
+                        <div class="col-2">
+                          <div class="input-group" style="width: 157px;">
+                              <label for="uname" style="color: azure ">Years of Experience:</label>
+                          <input type="number" class="form-control" [(ngModel)]="item.mentor_YrsOfExp" name="exp" placeholder="Enter experience"
+                            required style="width: 330px;">
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div><br><br><br><br>
+                          <br>
+                          </div>
+                      </div>
+                          <div class="col-2">
+                            <div class="input-group" style="width: 452px;">
+                              <label for="uname" style="color: azure; margin-left: 346px;">LinkedIn Url:</label>
+                              <input type="text" class="form-control" name="email" placeholder="Enter URL"
+                                required style="width: 330px; margin-left: 346px;">
+                              <div class="valid-feedback">Valid.</div>
+                              <div class="invalid-feedback">Please fill out this field.</div><br><br><br><br>
+                              <br>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="row row-space" style="margin-top: -82px;">
+                        <div class="col-2">
+                          <div class="input-group">
+                            <label for="uname" style="color: azure;">Technology:</label><br>
+                              <div class="rs-select2 js-select-simple select--no-search">
+                                  <select name="subject" style="margin-top: 2px; width: 198px; height: 39px;" [(ngModel)]="item.mentor_Skills" name="skill" >
+                                      <option disabled="disabled" selected="selected">Choose option</option>
+                                      <option>Core Java</option>
+                                      <option>Dot Net</option>
+                                      <option>Angular</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                              </div>
+                          </div>
+                      </div>
+                          <div class="col-2">
+                            <div class="input-group">
+                              <label for="uname" style="color: azure; margin-left: 346px;">Timeslot:</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="subject" style="margin-top: -5px; margin-left: 346px; width: 198px; height: 39px;" [(ngModel)]="item.mentor_Timeslot" name="time" >
+                                        <option disabled="disabled" selected="selected">Choose option</option>
+                                        <option>2pm-5pm</option>
+                                        <option>11am-3pm</option>
+                                        <option>12pm-4pm</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                     <button (click)="MRegister()" type="submit" class="btn btn-primary"
+          style="background-color: #52626f; margin-left: 344px; margin-top: 36px;"><a routerLink="ul">Register</a></button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</body>
+
+</html>
+<!-- {{item|json}} -->
